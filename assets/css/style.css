@@ -1,0 +1,41 @@
+body{
+    background-image: url("../images/backgrounds/backgroundHIF.jpg");
+}
+#presentation-panel, #reaction-container, #start{
+    background-color: white;
+    border-radius: 25px;
+    z-index: 1;
+    border: 0;
+    padding: 0;
+}
+#presentation-panel:hover{
+    -webkit-box-shadow: 6px 6px 5px 0 rgba(50, 50, 50, 0.8);
+    -moz-box-shadow:    6px 6px 5px 0 rgba(50, 50, 50, 0.8);
+    box-shadow:         6px 6px 5px 0 rgba(50, 50, 50, 0.8);
+}
+#presentation-panel:active{
+    -webkit-box-shadow: inset 0 0 5px 3px rgba(50, 50, 50, 0.8);
+    -moz-box-shadow:    inset 0 0 5px 3px rgba(50, 50, 50, 0.8);
+    box-shadow:         inset 0 0 5px 3px rgba(50, 50, 50, 0.8);
+}
+#header{
+    height: 8%;
+}
+#presentation-panel{
+    display: block;
+    z-index: 1;
+}
+#trivia-panel{
+    display: none;
+}
+#question-image{
+    height: 40%;
+}
+div#questions-panel {
+    height: 15%;
+    margin-top: 6%;
+}
+.main-question{
+    font-family: Helvetica, sans-serif;
+    font-size: larger;
+}

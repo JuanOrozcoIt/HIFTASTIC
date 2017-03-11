@@ -1,0 +1,67 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>HIF-TASTIC</title>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" id="space-top">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <form>
+        <input type="text" id="input-bar" placeholder="Please add an item!">
+        <input id="submit-input" type="submit">
+      </form>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-md-12" id="modify-content-container">
+      <label class="checkbox-inline"><input type="checkbox" class="modifier-term prepend" value="sweet">Sweet</label>
+      <label class="checkbox-inline"><input type="checkbox" class="modifier-term append" value="salty">Salty</label>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-1" id="save-button-container">
+      <button type="button" class="btn btn-default btn-sm" id="save-button">
+        <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save
+      </button>
+    </div>
+    <div class="col-md-11" id="delete-button-container">
+      <button type="button" class="btn btn-default btn-sm" id="delete-button" data-active="false">
+        <span class="glyphicon glyphicon-floppy-remove" aria-hidden="true"></span> Delete
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2" id="buttons-container">
+      <!--Area for Buttons-->
+    </div>
+    <div class="col-md-10">
+      <ul class="list-inline" id="gif-container">
+        <!--Area for HIFs-->
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
