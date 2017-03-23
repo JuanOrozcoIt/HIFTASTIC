@@ -72,9 +72,9 @@ input {
   /* Typography */
   text-align: center;
 }
-#player1,
+#jugador01,
 #result,
-#player2 {
+#jugador02 {
   position: relative;
   display: inline-block;
   /* Box-model */
@@ -161,11 +161,11 @@ li {
   /* Box-model */
   width: 40px;
 }
-.player1 {
+.jugador01 {
   /* Visual */
   color: #419d78;
 }
-.player2 {
+.jugador02 {
   /* Visual */
   color: #2d3047;
 }
