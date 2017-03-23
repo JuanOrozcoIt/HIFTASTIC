@@ -1,67 +1,60 @@
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>HIF-TASTIC</title>
-</head>
-<body>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12" id="space-top">
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Piedra Papel Tijeras</title>
+    <!-- CSS reset sheet -->
+    <link rel="stylesheet" href="reset.css">
+    <!-- Less JS library -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase Link -->
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Piedra Papel Tijeras</h1>
+    </header>
+    <div id="sizer">
+      <div id="swap-zone"><input id="username" placeholder="Name"/>
+        <button id="start">1, 2, 3, GO!</button>
+      </div>
+      <div id="current-turn"></div>
+      <div id="game-div">
+        <div id="jugador01">
+          <h3 id="jugador01-name">Player1</h3>
+          <ul>
+          </ul>
+          <div id="jugador01-chosen"></div>
+          <div class="outcomes">
+            <div class="outcome-trackers" id="jugador01-wins"></div>
+            <div class="outcome-trackers" id="jugador01-losses"></div>
+          </div>
+        </div>
+        <div id="result"></div>
+        <div id="jugador02">
+          <h3 id="jugador02-name">jugador02</h3>
+          <ul>
+          </ul>
+          <div id="jugador02-chosen"></div>
+          <div class="outcomes">
+            <div class="outcome-trackers" id="jugador02-wins"></div>
+            <div class="outcome-trackers" id="jugador02-losses"></div>
+          </div>
+        </div>
+      </div>
+      <div id="chat">
+        <div id="chat-messages"></div>
+        <div id="chat-bar">
+          <input id="chat-input" />
+          <button id="chat-send">Send</button>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <form>
-        <input type="text" id="input-bar" placeholder="Please add an item!">
-        <input id="submit-input" type="submit">
-      </form>
-    </div>
-  </div>
-  <div class="row">
-
-    <div class="col-md-12" id="modify-content-container">
-      <label class="checkbox-inline"><input type="checkbox" class="modifier-term prepend" value="sweet">Sweet</label>
-      <label class="checkbox-inline"><input type="checkbox" class="modifier-term append" value="salty">Salty</label>
-    </div>
-
-  </div>
-  <div class="row">
-    <div class="col-md-1" id="save-button-container">
-      <button type="button" class="btn btn-default btn-sm" id="save-button">
-        <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save
-      </button>
-    </div>
-    <div class="col-md-11" id="delete-button-container">
-      <button type="button" class="btn btn-default btn-sm" id="delete-button" data-active="false">
-        <span class="glyphicon glyphicon-floppy-remove" aria-hidden="true"></span> Delete
-      </button>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-2" id="buttons-container">
-      <!--Area for Buttons-->
-    </div>
-    <div class="col-md-10">
-      <ul class="list-inline" id="gif-container">
-        <!--Area for HIFs-->
-      </ul>
-    </div>
-  </div>
-
-</div>
-
-
-
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/javascript/app.js"></script>
-</body>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Script -->
+    <script src="piedraPapelTijera.js"></script>
+  </body>
 </html>
