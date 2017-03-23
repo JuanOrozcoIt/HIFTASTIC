@@ -30,7 +30,7 @@ input {
 /***********************************
               SwapZone
 ***********************************/
-#swap-zone {
+#barter-area {
   /* Box-model */
   width: 75%;
   /* Positioning */
@@ -38,14 +38,14 @@ input {
   /* Typography */
   text-align: center;
 }
-#swap-zone input {
+#barter-area input {
   /* Box-model */
   width: 200px;
   height: 30px;
   /* Typography */
   font-size: 30px;
 }
-#swap-zone button {
+#barter-area button {
   /* Box-model */
   width: 100px;
   height: 36px;
@@ -119,7 +119,7 @@ li {
   /* Typography */
   text-align: center;
 }
-.outcome-trackers { /* Box-model */
+.outcome-keeper { /* Box-model */
   display: inline-block;
 }
 #result h2 {
@@ -129,9 +129,9 @@ li {
   font-size: 60px;
 }
 /***********************************
-            Chatbox
+            dialoguebox
 ***********************************/
-#chat {
+#dialogue {
   /* Positioning */
   position: relative;
   /* Box-model */
@@ -141,23 +141,23 @@ li {
   padding: 10px;
   margin: 20px auto;
 }
-#chat-messages {
+#dialogue-messages {
   /* Box-model */
   height: 125px;
   overflow: auto;
   /* Visual */
   background-color: #fffcf7;
 }
-#chat-bar {
+#dialogue-bar {
   /* Positioning */
   position: absolute;
   bottom: 10px;
 }
-#chat-input {
+#dialogue-input {
   /* Box-model */
   width: 550px;
 }
-#chat-send {
+#dialogue-send {
   /* Box-model */
   width: 40px;
 }
