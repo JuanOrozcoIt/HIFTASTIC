@@ -1,6 +1,6 @@
 body {
   /* Visual */
-  background-color: #e4f0d0;
+  background-color: ##ff8533;
 }
 header {
   /* Visual */
@@ -40,14 +40,14 @@ input {
 }
 #barter-area input {
   /* Box-model */
-  width: 200px;
+  width: 500px;
   height: 30px;
   /* Typography */
   font-size: 30px;
 }
 #barter-area button {
   /* Box-model */
-  width: 100px;
+  width: 300px;
   height: 36px;
   /* Typography */
   font-size: 22px;
