@@ -47,10 +47,10 @@ input {
 }
 #barter-area button {
   /* Box-model */
-  width: 300px;
-  height: 36px;
+  width: 400px;
+  height: 42px;
   /* Typography */
-  font-size: 22px;
+  font-size: 30px;
   /* Positioning */
   vertical-align: top;
 }
@@ -159,7 +159,8 @@ li {
 }
 #dialogue-send {
   /* Box-model */
-  width: 40px;
+  height: 80px;
+  width: 300px;
 }
 .jugador01 {
   /* Visual */
