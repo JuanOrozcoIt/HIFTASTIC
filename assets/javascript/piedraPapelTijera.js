@@ -132,8 +132,8 @@ playersRef.on("value", function(snapshot) {
     $("#jugador01-losses").text("Losses: " + jugador1Data.losses);
   }
   else {
-    // If there is no player UNO, undisputable win-loss data and show waiting
-    $("#jugador01-name").text("Waiting for Player 1");
+    // If there is no player UNO, clear win-loss data and show waiting
+    $("#jugador01-name").text("Esperando al jugador 1");
     $("#jugador01-wins").empty();
     $("#jugador01-losses").empty();
   }
@@ -144,8 +144,8 @@ playersRef.on("value", function(snapshot) {
     $("#jugador02-losses").text("Losses: " + jugador2Data.losses);
   }
   else {
-    // If there is no player DOS, undisputable win-loss and show waiting
-    $("#jugador02-name").text("Esperando por el jugador 2");
+    // If there is no player DOS, clear win-loss and show waiting
+    $("#jugador02-name").text("Esperando al jugador 2");
     $("#jugador02-wins").empty();
     $("#jugador02-losses").empty();
   }
@@ -156,7 +156,7 @@ playersRef.on("value", function(snapshot) {
 currentTurnRef.on("value", function(snapshot) {
   // Gets current turn from snapshot
   currentTurn = snapshot.val();
-  // Don't do the following unless you're logged in
+  // Do not do the following unless you're logged in
   if (playerNum) {
     // For turn 1
     if (currentTurn === 1) {
